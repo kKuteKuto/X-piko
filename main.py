@@ -43,7 +43,8 @@ def process(latest_version: Version):
 
     print("Downloading patches")
     pikoRelease = download_release_asset(
-        "crimera/piko", "^(piko|patches).*\\.(jar|rvp)$", "bins", "patches.jar",True,"v1.59.0"
+        "crimera/piko", "^piko.*jar$", "bins", "patches.jar"
+      #  "crimera/piko", "^(piko|patches).*\\.(jar|rvp)$", "bins", "patches.jar",True,"v1.59.0"
     )
 
     print("Downloading integrations")
